@@ -2,9 +2,9 @@ FROM alpine:3.4
 
 MAINTAINER Luciano Mores <leslau@gmail.com>
 
-ADD ./exclude /
-ADD ./config-rsyncd-crond /
-ADD ./lighttpd.conf /etc/lighttpd/lighttpd.conf
+ADD exclude.txt /
+ADD config-rsyncd-crond.sh /
+ADD lighttpd.conf /etc/lighttpd/lighttpd.conf
 
 RUN \
 		apk update && \
@@ -15,6 +15,6 @@ EXPOSE 80
 
 VOLUME /var/www/localhost/htdocs/alpine/
 
-ENTRYPOINT [ "/config-rsyncd-crond" ]
+ENTRYPOINT [ "/config-rsyncd-crond.sh" ]
 
 CMD [ "lighttpd", "-f", "/etc/lighttpd/lighttpd.conf", "-D" ]

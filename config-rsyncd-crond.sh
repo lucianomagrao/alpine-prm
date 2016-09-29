@@ -19,7 +19,7 @@ dest=/var/www/localhost/htdocs/alpine/
         --delete-after \
         --delay-updates \
         --timeout=600 \
-        --exclude-from /exclude \
+        --exclude-from /exclude.txt \
         "$src" "$dest"
 EOF
 

@@ -21,11 +21,10 @@ docker volume create --name alpineprmdata
 docker run --restart="unless-stopped" -d -p 8080:80 -v alpineprmdata:/var/www/localhost/htdocs/alpine/ leslau/alpine-prm
 ```
 
-If you want to exclude more repositories, just create your own `exclude` file and override it.
+If you want to exclude more repositories, just create your own `exclude.txt` file and override it.
 
 ```
--v $(pwd)/exclude:/exclude
+-v $(pwd)/exclude.txt:/exclude.txt
 ```
-
 
 To configure your alpine to use your repository mirror follow instructions in http://wiki.alpinelinux.org/wiki/Alpine_Linux_package_management
