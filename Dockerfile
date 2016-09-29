@@ -2,9 +2,9 @@ FROM alpine:3.4
 
 MAINTAINER Luciano Mores <leslau@gmail.com>
 
-ADD exclude /
-ADD config-rsyncd-crond /
-ADD lighttpd.conf /etc/lighttpd/lighttpd.conf
+ADD ./exclude /
+ADD ./config-rsyncd-crond /
+ADD ./lighttpd.conf /etc/lighttpd/lighttpd.conf
 
 RUN \
 		apk update && \
