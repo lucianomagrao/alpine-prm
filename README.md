@@ -16,7 +16,7 @@ v3.2/
 
 ```shell
 docker volume create --name alpineprmdata
-docker run -d -p 8080:80 -v alpineprmdata:/var/www/localhost/htdocs/alpine/ leslau/alpine-prm
+docker run --restart="unless-stopped" -d -p 8080:80 -v alpineprmdata:/var/www/localhost/htdocs/alpine/ leslau/alpine-prm
 ```
 
 If you want to exclude more repositories, just create your own `exclude` file and override it.
