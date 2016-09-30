@@ -1,7 +1,7 @@
-[![](https://images.microbadger.com/badges/version/leslau/alpine-prm.svg)](https://microbadger.com/images/leslau/alpine-prm "Get your own version badge on microbadger.com")
-
 Alpine Linux - Package Repository Mirror
 ========================================
+[![Docker Automated buil](https://img.shields.io/docker/automated/leslau/alpine-prm.svg?maxAge=2592000?style=flat-square)](https://hub.docker.com/r/leslau/alpine-prm/)
+[![](https://images.microbadger.com/badges/version/leslau/alpine-prm.svg)](https://microbadger.com/images/leslau/alpine-prm "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/leslau/alpine-prm.svg)](https://microbadger.com/images/leslau/alpine-prm "Get your own image badge on microbadger.com")
 
 Docker image that sync packages from alpine official repositories and serve over http. Based on this [alpine mirror tutorial](http://wiki.alpinelinux.org/wiki/How_to_setup_a_Alpine_Linux_mirror).
 
